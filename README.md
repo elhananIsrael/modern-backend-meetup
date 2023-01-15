@@ -311,6 +311,7 @@ controller/StudentsController.java
     }
 ```
 commit - with students CRUD
+<br>
 ####simple filter
 StudentRepository.java
 ```java
@@ -502,6 +503,8 @@ nivitzhaky
 Jul201789#
 <br>
 docker tag backend  nivitzhaky/backend:002
+<br>
+docker push nivitzhaky/backend:002
 <br>
 docker-compose -f docker-compose-aws.yml up -d
 ### EC2

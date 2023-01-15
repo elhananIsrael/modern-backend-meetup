@@ -1,0 +1,17 @@
+version: "3"
+services:
+  appserver:
+    container_name: server
+    hostname: localhost
+    image: elhanani/backend:001
+    ports:
+      - "9090:9090"
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - 5432:5432
+    volumes:
+      - ./data:/var/lib/postgresql/data
+    privileged: true
